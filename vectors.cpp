@@ -18,5 +18,30 @@ int main()
         cout << b << endl;
      }
 
+    //applying input directly into the loop
+    //and combining with operations on the vector
+     vector<double> temps;
+
+     for (double temp; cin >> temp;)
+     {
+        if(temp == 999)
+        {
+            break;
+        }
+        temps.push_back(temp);
+     }
+
+     for(double x: temps)
+     {
+        cout << x << endl;
+     }
+
+     double sum = 0;
+     for(double x: temps) sum+= x;
+     cout << "Average temp: " << sum/temps.size() << endl;
+
+     sort(temps);
+     cout << "Median temperature: " << temps[temps.size()/2] << endl;
+
     return 0;
 }
