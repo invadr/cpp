@@ -2,10 +2,9 @@
 #include "Cat.h"
 #include "Dog.h"
 
-
 int main()
 {
-    Cat cat;
+    Cat cat = Cat("Eska", 1);
 
     cat.speak();
     cat.jump();
