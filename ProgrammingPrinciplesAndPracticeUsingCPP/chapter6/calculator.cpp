@@ -3,8 +3,17 @@
 
 using namespace std;
 
+class Token {
+public:
+    char kind;
+    double value;
+};
+
 int main()
 {
+    Token t1 {"+"};
+    Token t2 {"8", 115};
+
     cout << "Pleaes enter an expression (we can handle + and -): ";
     int lval = 0;
     int rval;
